@@ -6,7 +6,7 @@ Releases are triggered manually via GitHub Actions UI using the `build-and-publi
 
 The project tracks a single version number:
 
-- **SDK version** — in `pyproject.toml` and `src/claude_agent_sdk/_version.py`
+- **SDK version** — in `pyproject.toml` and `src/claude_hook_sdk/_version.py`
 
 Versions follow semver (`MAJOR.MINOR.PATCH`). Git tags use the format `vX.Y.Z`.
 

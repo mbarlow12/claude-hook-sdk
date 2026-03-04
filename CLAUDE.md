@@ -14,7 +14,7 @@ python -m pytest tests/
 
 # Codebase Structure
 
-- `src/claude_agent_sdk/` - Hook type definitions package
+- `src/claude_hook_sdk/` - Hook type definitions package
   - `__init__.py` - Public API exports (hook inputs, outputs, callback, context, matcher)
   - `types.py` - All TypedDict and dataclass definitions
   - `_version.py` - Package version

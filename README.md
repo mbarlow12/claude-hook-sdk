@@ -22,7 +22,7 @@ Requires Python 3.10+.
 ## Usage
 
 ```python
-from claude_agent_sdk import (
+from claude_hook_sdk import (
     PreToolUseHookInput,
     SyncHookJSONOutput,
     PreToolUseHookSpecificOutput,

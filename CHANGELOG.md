@@ -98,7 +98,7 @@
 
 ### New Features
 
-- **MCP tool annotations support**: Added support for MCP tool annotations via the `@tool` decorator's new `annotations` parameter, allowing developers to specify metadata hints like `readOnlyHint`, `destructiveHint`, `idempotentHint`, and `openWorldHint`. Re-exported `ToolAnnotations` from `claude_agent_sdk` for convenience (#551)
+- **MCP tool annotations support**: Added support for MCP tool annotations via the `@tool` decorator's new `annotations` parameter, allowing developers to specify metadata hints like `readOnlyHint`, `destructiveHint`, `idempotentHint`, and `openWorldHint`. Re-exported `ToolAnnotations` from `claude_hook_sdk` for convenience (#551)
 
 ### Bug Fixes
 
@@ -390,11 +390,11 @@ Introducing the Claude Agent SDK! The Claude Code SDK has been renamed to better
 
   ```python
   # Before
-  from claude_agent_sdk import query, ClaudeCodeOptions
+  from claude_hook_sdk import query, ClaudeCodeOptions
   options = ClaudeCodeOptions(...)
 
   # After
-  from claude_agent_sdk import query, ClaudeAgentOptions
+  from claude_hook_sdk import query, ClaudeAgentOptions
   options = ClaudeAgentOptions(...)
   ```
 

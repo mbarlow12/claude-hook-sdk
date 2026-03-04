@@ -1,6 +1,6 @@
 """Tests for Claude Hook SDK type definitions."""
 
-from claude_agent_sdk import (
+from claude_hook_sdk import (
     NotificationHookInput,
     NotificationHookSpecificOutput,
     PermissionRequestHookInput,
@@ -8,7 +8,7 @@ from claude_agent_sdk import (
     SubagentStartHookInput,
     SubagentStartHookSpecificOutput,
 )
-from claude_agent_sdk.types import (
+from claude_hook_sdk.types import (
     PostToolUseHookSpecificOutput,
     PreToolUseHookSpecificOutput,
 )
