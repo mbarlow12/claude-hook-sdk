@@ -2,7 +2,6 @@
 
 ```bash
 # Lint and style
-# Check for issues and fix automatically
 python -m ruff check src/ tests/ --fix
 python -m ruff format src/ tests/
 
@@ -11,17 +10,13 @@ python -m mypy src/
 
 # Run all tests
 python -m pytest tests/
-
-# Run specific test file
-python -m pytest tests/test_client.py
 ```
 
 # Codebase Structure
 
-- `src/claude_agent_sdk/` - Main package
-  - `client.py` - ClaudeSDKClient for interactive sessions
-  - `query.py` - One-shot query function
-  - `types.py` - Type definitions
-  - `_internal/` - Internal implementation details
-    - `transport/subprocess_cli.py` - CLI subprocess management
-    - `message_parser.py` - Message parsing logic
+- `src/claude_agent_sdk/` - Hook type definitions package
+  - `__init__.py` - Public API exports (hook inputs, outputs, callback, context, matcher)
+  - `types.py` - All TypedDict and dataclass definitions
+  - `_version.py` - Package version
+  - `py.typed` - PEP 561 typed package marker
+- `tests/test_types.py` - Unit tests for hook type definitions

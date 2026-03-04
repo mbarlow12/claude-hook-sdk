@@ -4,15 +4,12 @@ import sys
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, Literal, TypedDict
+from typing import Any, Literal, TypedDict
 
 from typing_extensions import NotRequired
 
-if TYPE_CHECKING:
-    from mcp.server import Server as McpServer
-else:
-    # Runtime placeholder for forward reference resolution in Pydantic 2.12+
-    McpServer = Any
+# mcp is no longer a runtime or dev dependency; use Any as a placeholder
+McpServer = Any
 
 # Permission modes
 PermissionMode = Literal["default", "acceptEdits", "plan", "bypassPermissions"]
