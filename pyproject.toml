@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "claude-agent-sdk"
+name = "claude-hook-sdk"
 version = "0.1.45"
 description = "Python type definitions for Claude Code hooks"
 readme = "README.md"
@@ -21,7 +21,7 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Typing :: Typed",
 ]
-keywords = ["claude", "ai", "sdk", "anthropic"]
+keywords = ["claude", "ai", "sdk", "anthropic", "hooks", "claude code"]
 dependencies = ["typing_extensions>=4.0.0; python_version<'3.11'"]
 
 [dependency-groups]
@@ -39,8 +39,8 @@ Homepage = "https://github.com/mbarlow12/claude-hook-sdk"
 Issues = "https://github.com/mbarlow12/claude-hook-sdk/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/claude_agent_sdk"]
-only-include = ["src/claude_agent_sdk"]
+packages = ["src/claude_hook_sdk"]
+only-include = ["src/claude_hook_sdk"]
 
 [tool.hatch.build.targets.sdist]
 include = ["/src", "/tests", "/README.md", "/LICENSE"]
@@ -91,4 +91,4 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["claude_agent_sdk"]
+known-first-party = ["claude_hook_sdk"]
